@@ -331,3 +331,25 @@ header {
 .table-small {
   font-size: 9px;
 }
+
+footer {
+  margin: 140px 0 50px;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+
+.footer-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+}
+
+.footer-phone {
+  margin: 0 0 1px;
+}
+
+.footer-email {
+  margin: 0;
+}
