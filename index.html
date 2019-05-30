@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>Метательные практики</title>
   <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/adaptive.css">
+  <link rel="stylesheet" href="/styles/fixed.css">
 </head>
 <script>
   function setMainImage(index) {
     const imagesEl = document.querySelector('.carousel__images');
-    imagesEl.style = `left: ${730 - 730 * index}px;`;
+    imagesEl.style = `left: ${73 - 73 * index}vw;`;
 
     const oldActiveEl = document.querySelector('.carousel__menu-button_active');
     oldActiveEl.classList.remove('carousel__menu-button_active');
@@ -83,7 +84,7 @@
       </div>
       <div class="page-section__aside">
         <img src="/images/target.svg" class="target-image" alt="Мишень">
-        <a href="/images/target_A4.pdf" class="target-link" target="_blank">
+        <a href="/images/target_A4.pdf" class="target-link" target="_blank" download>
           Скачать мишень
         </a>
       </div>
@@ -145,7 +146,7 @@
         результаты
       </h3>
       <p class="page-section__text-block page-section__text-block_no-margin">
-        Отправьте результаты с 00:00 20 мая до 23:59 2 июня по Москве. Заполните личные данные, введите результаты бросков и добавьте ссылку на видео. Видео можно загрузить на любой сервис, например, <a href="#">Яндекс.Диск</a>, <a href="#">Гугл Диск</a> или <a href="#">Ютуб</a>.
+        Отправьте результаты с 00:00 20 мая до 23:59 2 июня по Москве. Заполните личные данные, введите результаты бросков и добавьте ссылку на видео. Видео можно загрузить на любой сервис, например, <a href="https://disk.yandex.ru/client/disk" target="_blank">Яндекс.Диск</a>, <a href="https://drive.google.com" target="_blank">Гугл Диск</a> или <a href="https://www.youtube.com/" target="_blank">Ютуб</a>.
       </p>
     </div>
 
