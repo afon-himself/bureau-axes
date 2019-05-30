@@ -19,7 +19,7 @@ header {
 
 .page-header {
   max-width: 1200px;
-  margin: 0 auto 54px;
+  margin: 0 auto 57px;
   padding: 0 0 0 9px;
 }
 
@@ -42,26 +42,35 @@ header {
 .page-section {
   max-width: 1200px;
   padding: 0 0 0 9px;
-  margin: 0 auto;
+  margin: 0 auto 61px;
+}
+
+.page-section_no-margin {
+  margin-bottom: 0;
 }
 
 .page-section__title {
   font-weight: 900;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 51px;
   letter-spacing: -0.2px;
-  margin: 0 0 19px;
+  margin: 0 0 25px 2px;
 }
 
 .page-section__text-block {
-  margin: 0 0 21px;
+  width: 730px;
+  margin: 0 0 15px 3px;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: -0.2px;
 }
 
+.page-section__text-block a {
+  color: 
+}
+
 .page-section__text-block_no-margin {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .page-section__list {
@@ -140,6 +149,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 30px 0 28px;
+  margin-bottom: 9px;
 }
 
 .carousel__menu-button {
@@ -183,4 +193,70 @@ header {
 }
 .carousel__menu-button:nth-child(5) {
   background-image: url(/images/knife_5.png);
+}
+
+.carousel__caption {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.2px;
+}
+
+.page-section-image_double {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.page-section-image__left img {
+  margin: 3px 0 18px -7px;
+}
+
+.page-section-image__right img {
+  margin: 3px 0 18px 0;
+}
+
+.page-section-image__caption {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.2px;
+}
+
+.page-section-image__left .page-section-image__caption {
+  margin-left: 1px;
+}
+
+.page-section-image__right .page-section-image__caption {
+  margin: 1px 0 0 26px;
+}
+
+.page-cta-block {
+  background-color: #000;
+  margin: 28px 0 64px;
+  padding: 42px 0 51px 13px;
+}
+
+.page-cta-block__content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.page-cta-block__button {
+  width: 383px;
+  height: 60px;
+  background-color: #FFBE00;
+  display: block;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 38px;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  margin-right: 22px;
+  cursor: pointer;
 }
