@@ -8,9 +8,30 @@
   <link rel="stylesheet" href="/styles/fixed.css">
 </head>
 <script>
+  let currentIndex = 1;
+
+  window.onresize = function() {
+    const imagesEl = document.querySelector('.carousel__images');
+    const viewPortWidth = window.innerWidth;
+
+    if (viewPortWidth < 1200) {
+      imagesEl.style = `left: ${73 - 73 * currentIndex}vw;`;
+    } else {
+      imagesEl.style = `left: ${730 - 730 * currentIndex}px;`;
+    }
+  };
+
   function setMainImage(index) {
     const imagesEl = document.querySelector('.carousel__images');
-    imagesEl.style = `left: ${73 - 73 * index}vw;`;
+    const viewPortWidth = window.innerWidth;
+
+    currentIndex = index;
+
+    if (viewPortWidth < 1200) {
+      imagesEl.style = `left: ${73 - 73 * index}vw;`;
+    } else {
+      imagesEl.style = `left: ${730 - 730 * index}px;`;
+    }
 
     const oldActiveEl = document.querySelector('.carousel__menu-button_active');
     oldActiveEl.classList.remove('carousel__menu-button_active');

@@ -99,7 +99,6 @@ header {
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box;
   transition:all 10ms linear;
-
 }
 
 .page-section__text-block_no-margin {
@@ -409,4 +408,30 @@ footer {
 
 .footer-email {
   margin: 0;
+  text-decoration: none;
+  border: 0;
+  color: rgb(0, 91, 190);
+  border-bottom: 0.1vw solid rgb(0, 91, 190, .3);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box;
+  transition: all 100ms linear;
+}
+
+.footer-email:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(0, 91, 190);
+  border-bottom: 0.1vw solid rgb(0, 91, 190, .3);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box;
+}
+
+.footer-email:hover {
+  text-decoration: none;
+  border: 0;
+  color: rgb(0, 91, 190);
+  border-bottom: 0.1vw solid rgb(0, 91, 190, 1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box;
+  transition:all 10ms linear;
 }
