@@ -260,3 +260,42 @@ header {
   margin-right: 22px;
   cursor: pointer;
 }
+
+.page-section__table {
+  width: 389px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 24px;
+}
+
+.page-section__table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-section__table-cell {
+  width: 95px;
+}
+
+.page-section__table-cell_first-col {
+  width: 170px;
+}
+
+/* .page-section__table-cell_second-col {
+  width: 25px;
+}
+
+.page-section__table-cell_third-col {
+  width: 25px;
+}
+
+.page-section__table-cell_fourth-col {
+  width: 25px;
+} */
+
+.page-section__table-row_first {
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+
+}
