@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Метательные практики</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
+<script>
+  function setMainImage(index) {
+    const imagesEl = document.querySelector('.carousel__images');
+    imagesEl.style = `left: ${730 - 730 * index}px;`;
+
+    const oldActiveEl = document.querySelector('.carousel__menu-button_active');
+    oldActiveEl.classList.remove('carousel__menu-button_active');
+
+    const newActiveEl = document.querySelector(`.carousel__menu-button:nth-child(${index})`);
+    newActiveEl.classList.add('carousel__menu-button_active');
+  }
+</script>
 <body>
   <header>
     <h1 class="main-title">
@@ -48,11 +60,27 @@
           <li class="page-section__list-item">рулетка, мел, маркер или бумажный скотч, чтобы замерить расстояние до мишени.</li>
         </ul>
         <div class="carousel">
+          <div class="carousel__main-image">
+            <div class="carousel__images">
+              <img src="/images/knife_1.png" class="carousel__image">
+              <img src="/images/knife_2.png" class="carousel__image">
+              <img src="/images/knife_3.png" class="carousel__image">
+              <img src="/images/knife_4.png" class="carousel__image">
+              <img src="/images/knife_5.png" class="carousel__image">
+            </div>
+          </div>
+          <div class="carousel__menu">
+            <button class="carousel__menu-button carousel__menu-button_active" onclick="setMainImage(1)"></button>
+            <button class="carousel__menu-button" onclick="setMainImage(2)"></button>
+            <button class="carousel__menu-button" onclick="setMainImage(3)"></button>
+            <button class="carousel__menu-button" onclick="setMainImage(4)"></button>
+            <button class="carousel__menu-button" onclick="setMainImage(5)"></button>
+          </div>
         </div>
       </div>
       <div class="page-section__aside">
-        <img src="./images/target.svg" class="target-image" alt="Мишень">
-        <a href="./images/target_A4.pdf" class="target-link" target="_blank">
+        <img src="/images/target.svg" class="target-image" alt="Мишень">
+        <a href="/images/target_A4.pdf" class="target-link" target="_blank">
           Скачать мишень
         </a>
       </div>
