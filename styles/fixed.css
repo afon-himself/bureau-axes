@@ -245,11 +245,20 @@
     display: flex;
     margin-bottom: 32px;
   }
-  
+
+  .page-section-image__left {
+    width: 369px;
+  }
+
   .page-section-image__left img {
+    width: 100%;
     margin: 3px 0 18px -7px;
   }
-  
+
+  .page-section-image__right {
+    width: 376px;
+  }
+
   .page-section-image__right img {
     margin: 3px 0 18px 0;
   }
@@ -261,7 +270,7 @@
     line-height: 14px;
     letter-spacing: -0.2px;
   }
-  
+
   .page-section-image__left .page-section-image__caption {
     margin-left: 1px;
   }
@@ -301,6 +310,11 @@
   
   .page-cta-block__button:hover {
     background-color: #FFCB2B;
+  }
+
+  .page-cta-block__dates {
+    width: 510px;
+    height: 61px;
   }
   
   .page-section__table {
